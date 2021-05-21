@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mascotas Perdidas</title>
+    <link rel="icon" href="img/icono.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="only screen and (color)" href="css/style4.css">
+</head>
+
+<body>
+   
+    <div class="contenedor">
+        <center><img src="img/icono.jpg"></center>
+
+        <center>
+            <h2>Agregar Mascota Desaparecida </h2>
+        </center>
+        <form id='task-form'>
+            <label for="n">Nombre de la mascota : </label>
+            <input type="text" name="n" id="nombre"><br><br><br>
+
+            <label>Especie y raza : </label> <br>
+            <label for="especie"> Perro : </label>
+            <input type="radio" name="especie" value="perro" id="radiop">
+            <select name="raza_perro" id="razap">
+                <option value="otro">Otro</option>
+                <option value="Pastor aleman">Pastor Aleman</option>
+                <option value="Bulldog">Bulldog</option>
+                <option value="Retriver">Retriver</option>
+                <option value="galgo">galgo</option>
+                <option value="Chihuahua">Chihuahua</option>
+                <option value="pit bull">Pit bull</option>
+                <option value="quaker spain">quaker spain</option>
+                <option value="Husky siberiano">Husky siberiano</option>
+                <option value="Caniche">Caniche</option>
+                <option value="Yorkshire terrier">Yorkshire terrier</option>
+                <option value="Dálmata">Dálmata</option>
+                <option value="Bóxer">Bóxer</option>
+                <option value="Pekinés">Pekinés</option>
+                <option value="Rottweiler">Rottweiler</option>
+                <option value="San bernardo">San bernardo</option>
+
+            </select><br>
+            <label for="especie"> Gato : </label>
+            <input type="radio" name="especie" value="gato" id="radiog">
+            <select name="raza_gato" id="razag">
+                <option value="otro">otro</option>
+                <option value="angora">angora</option>
+                <option value="persa">persa</option>
+                <option value="siberiano">siberiano</option>
+                <option value="birmano">birmano</option>
+                <option value="siames">siames</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <label> Sexo:</label>
+            <label for="sexo"> Macho:</label>
+            <input type="radio" name="sexo" value="macho" id="macho">
+            <label for="sexo"> Hembra:</label>
+            <input type="radio" name="sexo" value="hembra" id="hembra">
+            <br>
+            <br>
+            <br>
+            <label for="ubicacion">Ubicación de donde se extravio : </label>
+            <div id="map"></div> 
+            <div id="borrar" onclick="iniciarMap()">Borrar ubicación</div>
+            <input type="text" name="ubicacion" id="ubicacion"><br><br><br>
+            <label for="Fecha">Fecha en la cual se extravio: </label>
+            <input type="date" name="fecha" id="fecha"  min="2017-01-01" max="2021-12-31"><br><br><br>
+            <label for="hora">Hora en la cual se extravio : </label>
+            <input type="time" name="hora" id="hora"><br><br><br>
+
+            <label for="tamaño">tamaño : </label>
+            <select name="tamaño" id="tam">
+                <option value="null">--Seleccionar--</option>
+                <option value="mpequeño">muy pequeño</option>
+                <option value="pequeño">pequeño</option>
+                <option value="mediano">mediano</option>
+                <option value="grande">grande</option>
+                <option value="muy grande">muy grande</option>
+            </select><br><br><br>
+            <label for="color">Colores : </label><br>
+            <label for="blanco"> Blanco : </label>
+            <input type="checkbox" name="blanco" value="blanco" id="blanco"> <br>
+            <label for="negro"> Negro : </label>
+            <input type="checkbox" name="negro" value="negro" id="negro"> <br>
+            <label for="Cafe"> Cafe : </label>
+            <input type="checkbox" name="Cafe" value="Cafe" id="cafe"> <br>
+            <label for="Cafe"> gris : </label>
+            <input type="checkbox" name="gris" value="gris" id="gris"> <br>
+            <label for="Cafe"> naranja (cafe claro anaranjado) : </label>
+            <input type="checkbox" name="naranja" value="naranja" id="naranga"> <br>
+            <br><br><br>
+            <label for="edad">Edad : </label>
+            <select name="edad" id="edad">
+                <option value="null">--Seleccionar--</option>
+                <option value="menos de 3 meses">menos de 3 meses</option>
+                <option value="menos de 6 meses">menos de 6 meses</option>
+                <option value="menos de 1 año"> menos de 1 año</option>
+                <option value="1 año">1 año</option>
+                <option value="2 años"> 2 años</option>
+                <option value="3 años"> 3 años</option>
+                <option value="4 años"> 4 años</option>
+                <option value="5 años"> 5 años</option>
+                <option value="6 años"> 6 años</option>
+                <option value="7 años"> 7 años</option>
+                <option value="8 años"> 8 años</option>
+                <option value="9 años"> 9 años</option>
+                <option value="10 años"> 10 años</option>
+                <option value="11 años"> 11 años</option>
+                <option value="12 años"> 12 años</option>
+                <option value="13 años"> 13 años</option>
+                <option value="14 años"> 14 años</option>
+                <option value="15 años"> 15 años</option>
+                <option value="16 años"> 16 años</option>
+                <option value="17 años"> 17 años</option>
+                <option value="18 años"> 18 años</option>
+                <option value="19 años"> 19 años</option>
+                <option value="20 años"> 20 años</option>
+            </select>
+            <br><br><br>
+            <label for="imagen">Agrega una foto de tu mascota : </label>
+            <input type="file" name="imagen" id="imagen" accept="image/*"/>
+            <br><br><br>
+            <label for="titulo">Titulo de tu publicación : </label>
+            <input type="text" name="titulo" id="titulo"><br><br><br>
+            <label for="des">Descripción extra de la mascota</label>
+            <br>
+            <textarea rows="10" cols="90" name="des"
+                id="descrip">Escribe aqui una descripción mas detallada de tu mascota</textarea>
+            <br><br><br>
+            <center><button type="submit" value="iniciar" id="publicar">PUBLICAR MASCOTA DESAPARECIDA</button></center>
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center><label>¿Desea cancelar? <a href="index.html">Regresar</a></label></center>
+
+    </div>
+    
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCpvfye8fJz9Or9-ZE1La3isS7x30uozdw",
+            authDomain: "mascotas2-62ab8.firebaseapp.com",
+            projectId: "mascotas2-62ab8",
+            storageBucket: "mascotas2-62ab8.appspot.com",
+            messagingSenderId: "945829248081",
+            appId: "1:945829248081:web:0238e76336bb8686e2cc70"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const fs = firebase.firestore();
+    </script>
+    <script src="js/agregar.js"></script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIlk-Dn2K6wzXIr6tJRNkYF3QXHHeE4C4&callback=iniciarMap"></script></script>
+</body>
+
+</html>

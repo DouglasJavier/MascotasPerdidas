@@ -1,0 +1,444 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+}
+header{
+    background-color:#D4FFC2;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px 0px;
+    width: 100%;
+    justify-content:space-between;
+    align-items: center;
+}
+.nav-button{
+    display: none;
+}
+.logo img{
+    width: 80px;
+    vertical-align: top;
+}
+nav{
+    width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items:center;
+    vertical-align: center;
+    justify-content:flex-end;
+    
+}
+nav a{
+	max-width: 200px;
+	color: black;
+    font-family: cursive;
+	min-height: 20px;
+	text-decoration: none;
+	padding: 15px;
+    text-align: center;
+	flex: 1;
+}
+#imgUser{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+}
+#inicio{
+    border: 3px solid black;
+    margin: 0px;
+    padding: 7px;
+    border-radius: 25px;
+    text-align: center;
+    align-items: center;
+    width: 100px;
+}
+#cuenta{
+    border: 3px solid black;
+    margin: 0px;
+    padding: 7px;
+    border-radius: 25px;
+    text-align: center;
+    
+}
+
+.modal-contenido{
+    width: 350px;
+    height: 480px;
+        margin-top: 70px;  
+        padding:0%;
+        border: 3px solid #fff;
+        background: #fff;
+        border-radius: 15px;
+        font-size: 12px;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .modal-contenido2{
+    width: 350px;
+    min-height: 480px;
+        padding:0%;
+        border: 3px solid #fff;
+        background: #fff;
+        border-radius: 15px;
+        font-size: 12px;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .modal{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+  }
+  #modalIni:target{
+    opacity:1;
+    pointer-events:auto;
+    justify-content: center;
+
+  }
+  #modalCond:target{
+    opacity:1;
+    pointer-events:auto;
+    justify-content: center;
+
+  }
+
+nav a:hover{
+    color:cornsilk;
+    background-color:#587B4A;
+    margin: 0px;
+    padding: 7px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+#map{
+    width: 800px;
+    height: 300px;
+}
+nav a:hover{
+    color:cornsilk;
+    background-color:#587B4A;
+    margin: 0px;
+    padding: 7px;
+    border-radius: 25px;
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    width: 180px;
+    background-color: #587B4A;
+    font-family: cursive;
+    font-size: 20px;
+    border: #587B4A;
+    border-radius: 8px;
+}
+textarea{
+    font-family: cursive;
+    font-size: 100%;
+}
+.present1 {
+    width: 100%;
+	min-height: 300px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: rgba(194, 255, 120,0.4);
+    background-size: 100%;
+    font-size: 18px;
+    flex-direction: row;
+    border-radius: 15px;
+}
+#img{
+    max-height: 300px;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px 8px white inset;
+}
+/*.present1 img{
+    position: absolute;
+    opacity: 0.5;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}*/
+p{
+    font-size: 130%;
+}
+.present2 {
+    width: 90%;
+	min-height: 100px;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(173, 227, 109,0.4);
+    background-size: 100%;
+    flex-direction: row;
+    border-radius: 15px;
+}
+.present2 img{
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px 8px white inset;
+}
+#elimPubli{
+    width: 245px;
+    background-color: #FF2828;
+    font-family: cursive;
+    font-size: 20px;
+    border: #587B4A;
+    border-radius: 8px;
+}
+
+.present3 {
+    width: 90%;
+	min-height: 100px;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    background-color: rgba(143, 184, 93,0.4);
+    background-size: 100%;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 3px solid #fff;
+}
+.present3 img{
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px 8px white inset;
+}
+.present4 {
+    width: 100%;
+	min-height: 300px;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(147, 255, 85 ,0.4);
+    background-size: 100%;
+    flex-direction: column;
+    
+    border-radius: 15px;
+}
+.present4 img{
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px 8px white inset;
+}
+.present5 {
+    width: 100%;
+	height: 300px;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(138, 253, 0,0.4);
+    background-size: 100%;
+    flex-direction: row;
+    border-radius: 15px;
+    justify-content:space-around;
+}
+.present5 img{
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px 8px white inset;
+}
+#what{
+    height: 50px;
+    width: 50px;
+}
+#face{
+    height: 50px;
+    width: 50px;
+}
+
+
+footer{
+    font-family: "Boing","Rubik",sans-serif;
+    color: darkgray;
+    background-color: #283747;
+    display: flex;
+    flex-direction: column;
+    
+}
+.pie{
+    display: flex;
+    flex-direction: row;
+}
+footer p{
+    width: 30%;
+}
+.nav-footer{
+    display: flex;
+    flex-direction: row;
+}
+footer a{
+    text-decoration: none;
+    color: darkgrey;
+    background-color: darkslategray;
+    width: 25px;
+    width: 100%;
+    margin: 2px;
+}
+#googleLogin{
+    font-family: arial;
+    font-size: 20px;
+    margin: 5px;
+    color: #EDEDED;
+    background: rgb(66, 133, 244);
+    width: 80%;
+    height: 40px;
+    border: 0px;
+}
+#facebookLogin{
+    font-family: arial;
+    font-size: 20px;
+    margin: 5px;
+    color: #EDEDED;
+    background: rgb(59, 89, 152);
+    width: 80%;
+    height: 40px;
+    border: 0px;
+}
+#googleLogin:hover{
+    background: rgb(23, 32, 42);
+    transform: translateY(-5px);
+    font-family: arial;
+    font-size: 20px;
+    width: 80%;
+}
+#facebookLogin:hover{
+    background: rgb(23, 32, 42);
+    transform: translateY(-5px);
+    font-family: arial;
+    font-size: 20px;
+    width: 80%;
+}
+a{
+   color: rgb(0,151,255);
+    font-family: arial; 
+}
+@media(max-width: 640px){
+	/*--------------- header ---------------*/
+header{
+	flex-direction: column;
+	}
+nav{
+	flex-direction: column;
+}
+/*--------------------boton para menu "HAMBURGUESA "--------------------------*/
+.nav-button{
+			background-color: #587B4A;
+			border: none;
+			width: 100%;
+			display: inline-block;
+}
+.nav-a{
+			width: 100%;
+			margin: 10px 0;
+			text-align: center;
+}
+.bye{
+    display: none;
+}
+.modal-contenido{
+    width: 300px;
+    height: 400px;
+    margin-top: 0px; 
+}
+.modal-contenido img{
+    height: 200px;
+}
+.modal-contenido2{
+    width: 300px;
+    max-height: 400px;
+    font-size: 9px;
+}
+.present{
+    height: 160px;
+}
+.present h1{
+    font-size: 25px;
+}
+.present p{
+    font-size: 15px;
+}
+h2{
+    font-size: 13px;
+}
+.contenedor-card{
+    font-size: 10px;
+    max-width: 240px;
+}
+.contenedor-card .card{
+
+    max-width: 240px;
+}
+.contenedor-card .card p{
+    font-size: 12px;
+}
+.contenedor-card .card img{
+    max-width: 240px;
+    max-height: 190px;
+}
+.present1{
+    flex-direction: column;
+    font-size: 12px;
+}
+#map{
+    width: 290px;
+    height: 200px;
+}
+#img{
+    max-height: 200px;
+    max-width: 290px;
+}
+#elimPubli{
+    width: 290px;
+    font-size: 12px;
+}
+textarea{
+    font-family: cursive;
+    font-size: 100%;
+    width: 270px;
+}
+.present2{
+    font-size: 12px;
+}
+.present3{
+    font-size: 12px;
+}
+.present3 p{
+    font-size: 12px;
+}
+button{
+    font-size: 12px;
+}
+.nav-footer{
+    flex-direction: column;
+}
+.pie{
+    flex-direction: column;
+}
+
+}
